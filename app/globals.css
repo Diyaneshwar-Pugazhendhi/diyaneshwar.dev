@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ */
+/* Design tokens — "quiet luxury" monochrome system                    */
+/* Light + dark. Consumed via tailwind.config.ts (hsl(var(--token))).   */
+/* ------------------------------------------------------------------ */
+@layer base {
+  :root {
+    --background: 226 24% 98%;      /* cool mist — soft near-white */
+    --foreground: 226 16% 15%;     /* soft ink slate */
+    --card: 0 0% 100%;
+    --card-foreground: 226 16% 15%;
+    --muted: 226 18% 94%;
+    --muted-foreground: 226 9% 44%;
+    --accent: 226 16% 15%;
+    --accent-foreground: 226 24% 98%;
+    --border: 226 15% 89%;
+    --ring: 226 16% 15%;
+    --radius: 0.9rem;
+  }
+
+  .dark {
+    --background: 226 20% 9%;      /* deep soft slate */
+    --foreground: 226 22% 92%;
+    --card: 226 18% 12%;
+    --card-foreground: 226 22% 92%;
+    --muted: 226 14% 16%;
+    --muted-foreground: 226 11% 66%;
+    --accent: 226 22% 92%;
+    --accent-foreground: 226 20% 9%;
+    --border: 226 14% 20%;
+    --ring: 226 22% 92%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-feature-settings: "cv11", "ss01";
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .container-content {
+    @apply mx-auto w-full max-w-content px-6 md:px-8;
+  }
+}
