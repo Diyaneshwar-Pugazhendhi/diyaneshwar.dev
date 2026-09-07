@@ -1,5 +1,8 @@
 # diyaneshwar.dev
 
+![CI](https://github.com/Diyaneshwar-Pugazhendhi/diyaneshwar.dev/actions/workflows/ci.yml/badge.svg)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+
 My personal portfolio site — a developer-focused, motion-rich single page built with **Next.js 14 (App Router)**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
 
 ![Preview](https://raw.githubusercontent.com/Diyaneshwar-Pugazhendhi/diyaneshwar.dev/main/screenshots/diyaneshwar-dev.png)
@@ -92,6 +95,10 @@ npm run lint     # ESLint
 ## 🌗 Theming
 
 The site uses `next-themes` with a class strategy. Toggle is wired in the navbar; theme is persisted in `localStorage` and respects the system preference by default.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please see [CONTRIBUTING.md](.github/CONTRIBUTING.md) for setup instructions and guidelines.
 
 ## 📄 License
 
